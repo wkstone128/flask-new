@@ -13,6 +13,11 @@ def index():
 def login():
     return '我是注册页面'
 
-if __name__ == "__main__":
-    app.run(debug=True,port=8000)
+# 添加新闻页面
+@app.route('/news')
+def news():
+    return '新闻页面'
 
+
+if __name__ == "__main__":
+    app.run(debug=True, port=8000)
